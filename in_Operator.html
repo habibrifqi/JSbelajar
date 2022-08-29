@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //in operator hanya akan mengecek apakah sebuah property ada atau tidak
+        //jadi walapun nama prorperty atau index nya undefined atau nulll,maka tetap akan diangap ada
+        const orang = {
+            nama: "error",
+            alamt: ""
+        }
+
+        const result = "nama" in orang; //true
+        document.writeln(`<p>${result}</p>`);
+
+        const hs = "alamt" in orang; //true
+        document.writeln(`<p>${hs}</p>`);
+    </script>
+</body>
+
+</html>
