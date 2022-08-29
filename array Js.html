@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //array di javasrcitp sama dengan array di php yang artinya dinamis
+        //isi dari array bisa bertambah dengan sendirinya
+
+        // array kosong
+
+        let arrayKosong = [];
+
+        let arrayNama = ["habib","rifqi","error" , 1, true];
+
+        //menambah data kedalam array
+        const names = [];
+        names.push("habib");
+        names.push("rifqi",123);
+
+        //console.tabel menampilakan console dalam bentuk tabel
+        console.table(names);
+        console.log();
+
+        //mengubah data,mengubah data di array index tertentu
+        names[0] = "blok";
+
+        console.table(names);
+
+        // Assosiative Array
+        //assosiative array yang memberikan nama pada index tidak bisa dilakukan di js
+        // jika memasaksa maka array akan merubah tipe data array menjadi opject
+
+
+
+        // const value1 = parseInt("1");
+        // const value2 = 2;
+        // const SUB = value1 + value2;
+
+        // document.writeln(`<p>${SUB}</p>`)
+
+        // document.writeln(`<p>${parseInt("1.9")}</p>`);
+        // document.writeln(`<p>${parseFloat("1.1")}</p>`);
+        // document.writeln(`<p>${Number("1.1")}</p>`);
+
+        // const a = 1;
+        // const b = 1;
+        // const total = a.toString() + b.toString();
+        // document.writeln(`<p>${total}</p>`);
+
+        // //number tidak bisa mentolerir string
+        // //sedangkat parseintaa/parsefloat bisa mentolerir selama ada di depan
+        // document.writeln(`<p>${parseInt("SALAH")}</P>`);
+        // document.writeln(`<p>${parseFloat("1.1SALAH")}</P>`);
+
+        // //isNan()
+        // //fungsion yang digunakan untuk engecek apakah variabel tersebut NaN atau tidak
+        // $first = Number("SALAH"); //NaN
+        // document.writeln(`<p>${isNaN($first)}</p>`);
+        // document.writeln(`<p>${isNaN("100")}</p>`);
+        // document.writeln(`<p>${isNaN(100)}</p>`);
+
+    </script>
+</body>
+</html>
