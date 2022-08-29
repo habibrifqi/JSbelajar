@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-
         // tipe data object adalah tipe data yg mirip dengan array
         //yang membedakan index tipe data bisa mengunakan string
         //index di object biasa di sebut artibute atau propertise
@@ -16,18 +17,32 @@
 
         //array pakai [] sedangkan object {}
         const orang = {};
-        
+
         //menambah atau mengubah 
         orang["nama"] = "habib rifqi";
         orang["alamat"] = "indonesia";
 
         console.table(orang);
 
+        // membuat object dengan properties
+        const babu = {
+            "nama lengkap": "babu1",
+            alamat: "waaw",
+            umur: 12
+        };
+        // atribut object bisa memakai string bisa tidak kalau ada spaasi pakai stringg
+
+        console.table(babu);
+
+        //cara akses properti object
+        console.info(`nama lengkap ${babu["nama lengkap"]}`)
+        console.info(`alamat ${babu.alamat}`)
+
 
         // document.writeln(`<p>${isNaN($first)}</p>`);
         // document.writeln(`<p>${isNaN("100")}</p>`);
         // document.writeln(`<p>${isNaN(100)}</p>`);
-
     </script>
 </body>
+
 </html>

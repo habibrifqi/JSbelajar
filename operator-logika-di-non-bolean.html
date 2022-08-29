@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>operator-logika-di-non-bolean</title>
+  </head>
+  <body>
+    <script>
+      //and dan or di non bolean
+
+      console.info("hello" || "");
+      console.info("" || "s");
+      console.info("" || []);
+      console.info(false || true);
+      console.info(0 || "Nol");
+
+      const person = {
+        nama: "habib",
+        belakang: "ss",
+      };
+
+      const nama = person.firstName || person.belakang;
+
+      document.writeln(`${nama}`);
+
+      //and
+      //operator yang mengambil nilai pertama yang falsy
+      console.info("AND");
+      console.info("hello" && "");
+      console.info("" && []);
+      console.info("" && 0);
+      console.info("NOL" && "");
+      console.info(0 && "NOL");
+    </script>
+  </body>
+</html>
