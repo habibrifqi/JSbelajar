@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // digunakan untuk menurunkan scope data
+        //dengan mengunakan with standment bisa mengakses orioerty dalam sebuah data tanoa harus menyebutkan datanya
+
+
+
+        //tanpa with stantement
+        const name = {
+            name : "habib",
+            alamat : "bantul"
+        };
+       console.log(name.name);
+       console.log(name.alamat);
+
+
+
+        //dengan with stantemnet
+
+        with(name){
+            document.writeln(`<p>${alamat}</p>`);
+            document.writeln(`<p>${name}</p>`);
+        }
+
+        //with stantement tidak di rekomendasikan mengunakanya
+        //kadang membuat kode menjadi ambigu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

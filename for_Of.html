@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // digunakan untuk melakukan iterasi property atau index,
+        //digunakan untujk melakukan iterasi terhadap value dari iterable object,seperti array,string dll.
+
+        // for of tidak bisa digunakan untuk melakukan iterasi data di object,karena bulanlah iterable
+
+
+
+        const name = ["habib" ,"asda","rifqi",121,"error"];
+        for (const index of name) {
+            document.writeln(`<p>${index} : ${name[index]}</p>`);
+            
+        }
+
+        const fullname ="sdklnaslkdasnd ahiashd";
+        for (const full of fullname) {
+            document.writeln(`<p>${full} : ${fullname[full]}</p>`);
+            
+        }
+    </script>
+</body>
+</html>

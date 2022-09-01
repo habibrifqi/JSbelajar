@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // return mengambalikan value
+        //cuma bisa mengembalikan 1 data
+        //jika banyak bisa dibungkus array
+       
+        function sayHelloWorld(nama, alamat){
+            const say = `Hello Shu:${nama} alamat : ${alamat} `;
+            return say;
+        }
+
+        //memanggil fungtion dan menangkap return valuenya
+        const result =  sayHelloWorld("rifqi","bantul");
+        document.writeln(`<p>${result}</p>`);
+
+        function getFinalValue(value) {
+            if (value > 90) {
+                return "A";
+            }else if(value > 80){
+                return "B";
+            }
+            
+        }
+
+        const nilai = getFinalValue(85);
+        document.writeln(`<p> ${nilai}`);
+        
+            //funtion juga bisa menghentikan eksekusi sebuah fungsion karena ketika di return program di bawahnya tidak akan di eksekusi
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
