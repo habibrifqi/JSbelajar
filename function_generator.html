@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //merupakan fungtion untuk membuat data generator
+        //generator adalah data yang bisa di interasi seperti array
+        //untuk membuat generator perlu mengukanan tanda * (bintang setelah kata function)
+
+        //dan untuk mengembalikan data tiap iterasi bisa gunakan kata kunci yield dikuti datanya
+
+        function* createNames() {
+            yield "habib";
+            yield "rifqi";
+            yield "error";
+        }
+ 
+        const names = createNames();
+
+        //tidak bisa
+        // console.info(name[0]);
+        
+        for (const name of names){
+            console.info(name);
+        }
+
+        
+
+        function* buatGanjil(value) {
+
+            for(let i = 1; i <= value; i++){
+                if(i % 2 == 1){
+                    yield i;
+                }
+            }
+            
+        }
+
+        const numbers = buatGanjil(100);
+        // console.info(numbers);
+        for(const number of numbers){
+            console.info(number);
+        }
+
+        
+    </script> 
+</body>
+</html>

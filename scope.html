@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //merupakan area akses sebuah data
+        //ada scope global dan local
+        //setiap membuat function maka membuat scope 
+
+        //data di global scope bisa di akses dari local 
+        // data dari local hanya bisa di akases di local scope tersebut
+
+
+        //global scope
+        let counter = 0;
+
+        //fungtion global scope tapi isinya local scope
+        function hitMe(){
+            let varpertama = "satu";
+            counter++;
+        }
+
+        //global scope
+        function other(params) {
+            
+        }
+
+        hitMe();
+        hitMe();
+        hitMe();
+        console.info(counter);
+
+        //error
+        // console.info(varpertama);
+        
+
+        function first() {
+            let firstVariable = "first";
+
+            function second() {
+                console.info(firstVariable);//bisa
+                console.info(counter);//bisa
+            }
+
+            second();
+            
+        }
+
+        first();
+
+
+    </script> 
+</body>
+</html>
